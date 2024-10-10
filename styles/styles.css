@@ -8,6 +8,8 @@
 
 /* Navigation Menu */
 .nav-menu {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 50px 150px;
   display: flex;
   align-items: center;
@@ -32,6 +34,7 @@
 .nav-menu-btn:hover {
   background-color: aliceblue;
   cursor: pointer;
+  border-color: #6364a5;
 }
 
 /* Hero Banner Section */
@@ -80,4 +83,70 @@
 .hero-btn:hover {
   background-color: #6364a5;
   cursor: pointer;
+}
+/* Web Dev Section */
+.web-dev-container {
+  max-width: 1120px;
+  border-radius: 16px;
+  padding: 80px 97px;
+  background: rgba(13, 19, 33, 0.02);
+  margin: 80px auto;
+}
+
+.web-dev-container > h2 {
+  color: #0d1321;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.web-dev-container > p {
+  color: #0d1321;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  margin: 24px 0 48px;
+  opacity: 0.7;
+}
+
+.web-dev-box-container {
+  padding: 48px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+.web-dev-box-container:nth-child(even) {
+  background: linear-gradient(270deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.web-dev-box-content > h3 {
+  color: rgba(13, 19, 33, 0.7);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px; /* 150% */
+}
+.web-dev-box-content > p {
+  color: #0d1321;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  margin: 16px 0 32px;
+  opacity: 0.7;
+}
+.web-dev-box-content > button {
+  border: 1px solid #0d1321;
+  opacity: 0.7;
+  padding: 12px 20px;
+  color: #0d1321;
+  font-size: 20px;
+  font-weight: 600;
+}
+.web-dev-box-content > button:hover {
+  background-color: aliceblue;
+  cursor: pointer;
+  border-radius: 3px;
+  border-color: #6364a5;
 }
