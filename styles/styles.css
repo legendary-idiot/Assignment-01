@@ -91,16 +91,19 @@ main {
 /* Web Dev Section */
 .web-dev-container {
   border-radius: 16px;
-  padding: 80px 97px;
+  padding: 80px 0;
   background: rgba(13, 19, 33, 0.02);
   margin: 80px auto;
 }
-
+.web-dev-parent-box {
+  padding: 0 97px;
+}
 .section-title {
   color: #0d1321;
   text-align: center;
   font-size: 32px;
   font-weight: 800;
+  padding-inline: 144px;
 }
 
 .section-description {
@@ -110,6 +113,7 @@ main {
   font-weight: 400;
   line-height: 26px; /* 162.5% */
   margin: 24px 0 48px;
+  padding-inline: 144px;
   opacity: 0.7;
 }
 
@@ -163,4 +167,65 @@ main {
 .inspiration-content iframe {
   border-radius: 16px;
   background: lightgray 0px -5.621px / 100% 110.681% no-repeat;
+}
+/* Current Target Section */
+.current-target {
+  margin: 100px 0;
+}
+.target-box-parent {
+  display: flex;
+  gap: 24px;
+}
+.target-box-parent img {
+  margin-bottom: 24px;
+}
+.target-box-child {
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid rgba(13, 19, 33, 0.15);
+}
+.child-bg-1 {
+  background: rgba(255, 76, 30, 0.05);
+}
+.child-bg-2 {
+  background: rgba(0, 76, 232, 0.05);
+}
+.child-bg-3 {
+  background: rgba(255, 223, 0, 0.05);
+}
+.target-box-child a {
+  color: #0d1321;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+.box-title {
+  color: #0d1321;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 36px; /* 150% */
+}
+.box-description {
+  color: #0d1321;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  opacity: 0.7;
+  margin: 8px 0 24px;
+}
+
+/* Next Target Section */
+.next-target-box {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+.next-target-box > figure img {
+  width: 110px;
+}
+.next-target-box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
