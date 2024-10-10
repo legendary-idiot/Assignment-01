@@ -69,15 +69,19 @@
   opacity: 0.7;
   margin: 24px 0 32px;
 }
-.hero-btn {
+.hero-banner a {
   display: block;
+  width: fit-content;
+  margin-inline: auto;
+  text-decoration: none;
+}
+.hero-btn {
   padding: 21px 24px;
   border-radius: 8px;
   background: #0d1321;
   color: #fff;
   font-size: 20px;
   font-weight: 600;
-  margin: 0 auto;
   border: none;
 }
 .hero-btn:hover {
@@ -150,6 +154,7 @@ main {
   color: #0d1321;
   font-size: 20px;
   font-weight: 600;
+  background-color: #fff;
 }
 .web-dev-box-content > button:hover {
   background-color: aliceblue;
@@ -227,5 +232,94 @@ main {
 .next-target-box-container {
   display: flex;
   flex-direction: column;
+  gap: 24px;
+}
+
+/* Support Section */
+.support-container {
+  height: 320px;
+  margin: 50px 0 80px;
+  padding: 64px 48px;
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    url("../assets/handshake.jpg") lightgray 50% / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.support-container > h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px; /* 112.5% */
+}
+.support-container > p {
+  max-width: 600px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 26px; /* 162.5% */
+  opacity: 0.7;
+}
+.support-input-field {
+  display: flex;
+  gap: 16px;
+}
+.support-input-field input[type="text"] {
+  border-radius: 8px;
+  border: 1px solid rgba(13, 19, 33, 0.15);
+  background: #fff;
+  width: 548px;
+  padding: 20px;
+  outline: none;
+  border: none;
+  color: rgba(13, 19, 33, 0.4);
+  font-size: 16px;
+  font-weight: 400;
+}
+.support-input-field input[type="submit"] {
+  border-radius: 8px;
+  background: #fff;
+  padding: 17px 20px;
+  color: #0d1321;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+}
+.support-input-field input[type="submit"]:hover {
+  background-color: #6364a5;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+/* Footer Section */
+.footer-container {
+  border-radius: 16px;
+  background: rgba(13, 19, 33, 0.03);
+}
+.footer-content {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 32px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-content > h3 {
+  color: #0d1321;
+  font-size: 20px;
+  font-weight: 600;
+}
+.footer-nav-link {
+  display: flex;
   gap: 24px;
 }
