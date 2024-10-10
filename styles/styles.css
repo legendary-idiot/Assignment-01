@@ -84,23 +84,26 @@
   background-color: #6364a5;
   cursor: pointer;
 }
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+}
 /* Web Dev Section */
 .web-dev-container {
-  max-width: 1120px;
   border-radius: 16px;
   padding: 80px 97px;
   background: rgba(13, 19, 33, 0.02);
   margin: 80px auto;
 }
 
-.web-dev-container > h2 {
+.section-title {
   color: #0d1321;
   text-align: center;
   font-size: 32px;
   font-weight: 800;
 }
 
-.web-dev-container > p {
+.section-description {
   color: #0d1321;
   text-align: center;
   font-size: 16px;
@@ -149,4 +152,15 @@
   cursor: pointer;
   border-radius: 3px;
   border-color: #6364a5;
+}
+
+/* Inspiration Section */
+.inspiration-content {
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid rgba(13, 19, 33, 0.2);
+}
+.inspiration-content iframe {
+  border-radius: 16px;
+  background: lightgray 0px -5.621px / 100% 110.681% no-repeat;
 }
